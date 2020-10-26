@@ -1,0 +1,39 @@
+.about .container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 94px;
+}
+
+.about .title {
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-thumb {
+  position: relative;
+}
+
+.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}

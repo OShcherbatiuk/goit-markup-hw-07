@@ -1,0 +1,33 @@
+.project-nav {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.project-nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.project-nav-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background: var(--secondary-bg-color);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+}
