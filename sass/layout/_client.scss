@@ -3,9 +3,11 @@
   padding-bottom: 92px;
 }
 
-.client-list {
-  display: flex;
-  justify-content: space-between;
+.client {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .client-list-item-link {
