@@ -109,11 +109,6 @@ img {
   transition: all 500ms linear 500ms;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-  transition: all 500ms linear 0ms;
-}
-
 .modal {
   padding: 40px;
   position: absolute;
@@ -126,6 +121,11 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: all 500ms linear 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 500ms linear 0ms;
 }
 
 .close-btn {
@@ -144,9 +144,16 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:focus,
-.close-btn:hover {
+.close-btn:focus, .close-btn:hover {
   fill: #2196f3;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  min-height: 342px;
+  margin: 0 auto;
 }
 
 .contact-form__title {
@@ -156,14 +163,6 @@ img {
   line-height: 23px;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 448px;
-  min-height: 342px;
-  margin: 0 auto;
 }
 
 .contact-form-field {
@@ -189,24 +188,6 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form__input:focus,
-.contact-form__message:focus {
-  outline: none;
-  border: 1px solid #2196f3;
-}
-
-.contact-form__input:focus + .contact-form-icon {
-  fill: #2196f3;
-}
-
-.contact-form-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .contact-form__message {
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -218,7 +199,12 @@ img {
   resize: none;
 }
 
-.contact-form-accept-lable {
+.contact-form__input:focus, .contact-form__message:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+
+.contact-form .contact-form-accept-lable {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -247,10 +233,6 @@ img {
   border: 2px solid #2196f3;
 }
 
-.accept-link {
-  color: #2196f3;
-}
-
 .contact-form__submit {
   align-self: center;
   height: 50px;
@@ -265,6 +247,22 @@ img {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+.contact-form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form__input:focus + .contact-form-icon {
+  fill: #2196f3;
+}
+
+.accept-link {
+  color: #2196f3;
 }
 
 .hero-btn {
