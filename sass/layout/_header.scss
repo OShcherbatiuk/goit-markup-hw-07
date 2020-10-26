@@ -36,7 +36,7 @@
 .navigation-list-item-link {
   padding-top: 32px;
   position: relative;
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 500;
   font-size: 14px;
@@ -61,7 +61,7 @@
   align-items: center;
   padding: 31px 0;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   font-weight: 500;
   font-size: 14px;
@@ -76,18 +76,18 @@
 .header-tel-link:hover,
 .header-mail-link:focus,
 .header-tel-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .address-logo {
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
 }
 
 .header-mail-link:hover .address-logo,
 .header-tel-link:hover .address-logo,
 .header-mail-link:focus .address-logo,
 .header-tel-link:focus .address-logo {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .current-page::after {
@@ -95,12 +95,12 @@
   display: block;
   margin-top: 27px;
   content: "";
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   width: 100%;
   height: 4px;
   border-radius: 2px;
 }
 
 .navigation-list-item-link.current-page {
-  color: var(--accent-color);
+  color: $accent-color;
 }

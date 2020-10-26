@@ -1,14 +1,14 @@
-:root {
-  --primari-font-family: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --secondary-title-color: #ffffff;
-  --accent-color: #2196f3;
-  --secondary-bg-color: #f5f4fa;
-  --link-color: #afb1b8;
-}
-
+@charset "UTF-8";
+/*
+Основной цвет текста #757575
+Вторичный цвет текста #212121
+Акцент #2196F3
+font-family: Raleway bold; - лого
+font-family: Roboto 500; - навигация шапки, h команды, нав портфолио
+font-family: Roboto 900; h героя
+font-family: Roboto bold; кнопка услуг, h фичи, h секций, h портфеля
+font-family: Roboto normal(400) p фичи, p команды, p портфеля
+*/
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -42,8 +42,8 @@
 }
 
 body {
-  font-family: var(--primari-font-family);
-  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  color: #757575;
   font-style: normal;
   max-width: 1600px;
   margin: auto;
@@ -65,7 +65,7 @@ img {
 }
 
 .logo {
-  font-family: var(--secondary-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -73,11 +73,11 @@ img {
 }
 
 .logo-first {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .logo-second {
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .title {
@@ -88,7 +88,7 @@ img {
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: #212121;
   margin-bottom: 50px;
 }
 
@@ -130,7 +130,7 @@ img {
 .navigation-list-item-link {
   padding-top: 32px;
   position: relative;
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -154,7 +154,7 @@ img {
   display: flex;
   align-items: center;
   padding: 31px 0;
-  color: var(--primary-text-color);
+  color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -168,18 +168,18 @@ img {
 .header-tel-link:hover,
 .header-mail-link:focus,
 .header-tel-link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .address-logo {
-  fill: var(--primary-text-color);
+  fill: #757575;
 }
 
 .header-mail-link:hover .address-logo,
 .header-tel-link:hover .address-logo,
 .header-mail-link:focus .address-logo,
 .header-tel-link:focus .address-logo {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .current-page::after {
@@ -187,14 +187,14 @@ img {
   display: block;
   margin-top: 27px;
   content: "";
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   width: 100%;
   height: 4px;
   border-radius: 2px;
 }
 
 .navigation-list-item-link.current-page {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .project-nav {
@@ -218,8 +218,8 @@ img {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  background: var(--secondary-bg-color);
+  color: #212121;
+  background: #f5f4fa;
   border-radius: 4px;
   border: 1px solid transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -227,8 +227,8 @@ img {
 
 .btn:hover,
 .btn:focus {
-  color: var(--secondary-title-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .project-list {
@@ -272,7 +272,7 @@ img {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: var(--secondary-title-color);
+  color: #ffffff;
 }
 
 .project-thumb:hover .overlay {
@@ -299,7 +299,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .project-description {
@@ -307,7 +307,7 @@ img {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .footer {
@@ -333,7 +333,7 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--secondary-title-color);
+  color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -353,7 +353,7 @@ img {
 .address-list-link:focus,
 .footer-mail-link:focus,
 .footer-tel-link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer .logo {
@@ -362,7 +362,7 @@ img {
 }
 
 .logo-foot-second {
-  color: var(--secondary-title-color);
+  color: #ffffff;
 }
 
 .footer-text-item {
@@ -371,7 +371,7 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-title-color);
+  color: #ffffff;
 }
 
 .footer-social {
@@ -399,13 +399,13 @@ img {
 }
 
 .footer .social-link {
-  fill: var(--secondary-title-color);
+  fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-item-link:hover,
 .footer-social-list-item-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .footer-form__input {
@@ -419,7 +419,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
-  color: var(--secondary-title-color);
+  color: #ffffff;
 }
 
 .footer-form__submit {
@@ -436,7 +436,7 @@ img {
   line-height: 30px;
   letter-spacing: 0.06em;
   border: none;
-  color: var(--secondary-title-color);
+  color: #ffffff;
   cursor: pointer;
 }
 

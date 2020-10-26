@@ -19,8 +19,8 @@
 }
 
 body {
-  font-family: var(--primari-font-family);
-  color: var(--primary-text-color);
+  font-family: $primari-font-family;
+  color: $primary-text-color;
   font-style: normal;
   max-width: 1600px;
   margin: auto;

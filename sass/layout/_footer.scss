@@ -21,7 +21,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--secondary-title-color);
+  color: $secondary-title-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -41,7 +41,7 @@
 .address-list-link:focus,
 .footer-mail-link:focus,
 .footer-tel-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .footer .logo {
@@ -50,7 +50,7 @@
 }
 
 .logo-foot-second {
-  color: var(--secondary-title-color);
+  color: $secondary-title-color;
 }
 
 .footer-text-item {
@@ -60,7 +60,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--secondary-title-color);
+  color: $secondary-title-color;
 }
 
 .footer-social {
@@ -88,13 +88,13 @@
 }
 
 .footer .social-link {
-  fill: var(--secondary-title-color);
+  fill: $secondary-title-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-item-link:hover,
 .footer-social-list-item-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .footer-form__input {
@@ -108,7 +108,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
-  color: var(--secondary-title-color);
+  color: $secondary-title-color;
 }
 
 .footer-form__submit {
@@ -117,7 +117,7 @@
   justify-content: center;
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -126,7 +126,7 @@
   letter-spacing: 0.06em;
   border: none;
 
-  color: var(--secondary-title-color);
+  color: $secondary-title-color;
   cursor: pointer;
 }
 

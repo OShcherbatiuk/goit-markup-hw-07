@@ -28,7 +28,7 @@
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
-  background-color: var(--secondary-title-color);
+  background-color: $secondary-title-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -44,7 +44,7 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: var(--secondary-title-color);
+  background-color: $secondary-title-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -53,7 +53,7 @@
 
 .close-btn:focus,
 .close-btn:hover {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .contact-form__title {
@@ -62,7 +62,7 @@
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 .contact-form {
   display: flex;
@@ -98,11 +98,11 @@
 .contact-form__input:focus,
 .contact-form__message:focus {
   outline: none;
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
 }
 
 .contact-form__input:focus + .contact-form-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .contact-form-icon {
@@ -147,14 +147,14 @@
 
 .contact-form-accept:checked + .contact-form-accept-lable::before {
   background-image: url(../images/hero/accept-icon.svg);
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid var(--accent-color);
+  border: 2px solid $accent-color;
 }
 
 .accept-link {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .contact-form__submit {
@@ -162,7 +162,7 @@
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   padding: 10px 56px;
   cursor: pointer;
   border: none;
@@ -171,5 +171,5 @@
   line-height: 30px;
   letter-spacing: 0.06em;
 
-  color: var(--secondary-title-color);
+  color: $secondary-title-color;
 }
