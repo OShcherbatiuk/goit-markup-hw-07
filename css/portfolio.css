@@ -111,6 +111,13 @@ img {
   align-items: baseline;
 }
 
+.features .container {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
