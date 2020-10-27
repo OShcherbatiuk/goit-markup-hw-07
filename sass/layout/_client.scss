@@ -1,12 +1,21 @@
-.client .container {
-  padding-top: 94px;
-  padding-bottom: 92px;
-}
-
 .client {
+  .container {
+    padding-top: 94px;
+    padding-bottom: 92px;
+  }
+
   &-list {
     display: flex;
     justify-content: space-between;
+  }
+  &-logo {
+    fill: $link-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .client-list-item-link:hover &,
+    .client-list-item-link:focus & {
+      fill: $accent-color;
+    }
   }
 }
 
@@ -20,19 +29,9 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client-logo {
-  fill: $link-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-list-item-link:hover,
-.client-list-item-link:focus {
-  border: 1px solid $accent-color;
-}
-
-.client-list-item-link:hover .client-logo,
-.client-list-item-link:focus .client-logo {
-  fill: $accent-color;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }

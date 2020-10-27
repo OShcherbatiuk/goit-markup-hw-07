@@ -1,15 +1,15 @@
 .project-nav {
   margin-top: 94px;
   margin-bottom: 50px;
-}
 
-.project-nav-list {
-  display: flex;
-  justify-content: center;
-}
+  &-list {
+    display: flex;
+    justify-content: center;
 
-.project-nav-list-item:not(:last-child) {
-  margin-right: 8px;
+    &-item:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
 
 .btn {
@@ -24,10 +24,10 @@
   border-radius: 4px;
   border: 1px solid transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.btn:hover,
-.btn:focus {
-  color: $secondary-title-color;
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $secondary-title-color;
+    background-color: $accent-color;
+  }
 }

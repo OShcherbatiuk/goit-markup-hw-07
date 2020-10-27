@@ -1,10 +1,10 @@
-.about .container {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 94px;
-}
-
 .about {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 94px;
+  }
+
   &-list {
     display: flex;
     justify-content: space-between;
