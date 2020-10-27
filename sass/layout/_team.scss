@@ -1,12 +1,6 @@
 .team {
   background-color: $secondary-bg-color;
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+
   &-list {
     display: flex;
     &-name {

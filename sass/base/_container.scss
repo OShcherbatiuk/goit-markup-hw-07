@@ -2,4 +2,33 @@
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  .about & {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 94px;
+  }
+
+  .client & {
+    padding-top: 94px;
+    padding-bottom: 92px;
+  }
+  .features & {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+  .team & {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

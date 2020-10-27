@@ -11,4 +11,8 @@
   &-second {
     color: $title-text-color;
   }
+
+  .header & {
+    margin-right: 94px;
+  }
 }
