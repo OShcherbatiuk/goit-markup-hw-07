@@ -383,6 +383,15 @@ img {
   margin-right: 70px;
 }
 
+.footer-text-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .adress-list-item {
   margin-top: 10px;
 }
@@ -416,15 +425,6 @@ img {
 }
 
 .logo-foot-second {
-  color: #ffffff;
-}
-
-.footer-text-item {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
 }
 

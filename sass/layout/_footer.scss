@@ -7,6 +7,15 @@
   &-address {
     margin-right: 70px;
   }
+  &-text-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $secondary-title-color;
+  }
 }
 
 .adress-list-item {
@@ -42,16 +51,6 @@
 }
 
 .logo-foot-second {
-  color: $secondary-title-color;
-}
-
-.footer-text-item {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
   color: $secondary-title-color;
 }
 
