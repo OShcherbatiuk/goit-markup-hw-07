@@ -1,15 +1,12 @@
 .footer {
   background-color: #2f303a;
-
-  .container {
-    padding: 60px 15px;
-    display: flex;
-    align-items: baseline;
+  .social-link {
+    fill: $secondary-title-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-
-.footer-address {
-  margin-right: 70px;
+  &-address {
+    margin-right: 70px;
+  }
 }
 
 .adress-list-item {
@@ -44,11 +41,6 @@
   color: $accent-color;
 }
 
-.footer .logo {
-  display: block;
-  margin-bottom: 20px;
-}
-
 .logo-foot-second {
   color: $secondary-title-color;
 }
@@ -70,70 +62,65 @@
 .footer-social-list {
   display: flex;
   margin-top: 20px;
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
 }
 
-.footer-social-list-item-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.footer-form {
+  &__input {
+    margin-top: 20px;
+    margin-right: 12px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    color: $secondary-title-color;
+  }
+  &__submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    border: none;
 
-.footer-social-list-item:not(:last-child) {
-  margin-right: 10px;
-}
+    color: $secondary-title-color;
+    cursor: pointer;
 
-.footer .social-link {
-  fill: $secondary-title-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-list-item-link:hover,
-.footer-social-list-item-link:focus {
-  background-color: $accent-color;
-}
-
-.footer-form__input {
-  margin-top: 20px;
-  margin-right: 12px;
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: inherit;
-  color: $secondary-title-color;
-}
-
-.footer-form__submit {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  border: none;
-
-  color: $secondary-title-color;
-  cursor: pointer;
-}
-
-.footer-form__submit::after {
-  margin-left: 10px;
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/footer/send-icon.svg);
+    &::after {
+      margin-left: 10px;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/footer/send-icon.svg);
+    }
+  }
 }
